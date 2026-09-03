@@ -36,6 +36,7 @@
         .conteudo-texto {
            text-aling: left;
         }
+    
         .botoes-container {
           margin-top: 16px;
         }
@@ -54,10 +55,9 @@
   </header>
   
 <main> 
-    <img src="Gemini_Generated_Image_dvlb4bdvlb4bdvlb.png" alt="imagem do personagem principal Meliodas do anime Os Setes Pecados Capitais">
-    <div>
+<img src="Gemini_Generated_Image_dvlb4bdvlb4bdvlb.png" alt="imagem do personagem principal Meliodas do anime Os Setes Pecados Capitais">
 
-      <div class="conteudo-texto">
+    <div class="conteudo-texto">
       <h2>MEU PRIMEIRO POST</h2>
       <p>Por:Kelly Santos</p>
       <P> Boas vindas ao meu primeiro Blog!Aqui vou 
@@ -70,13 +70,16 @@
     </div>
   </div>
 </main>
+  
   <script>
       const botoes = document. querySelectorALL("button");
 
-      botoes.forEach( function (botao) {
-        botao.addEventListenner("click", function () {
+      botoes.forEach(function (botao) {
+        botao.addEventListener("click", function () {
           let spanTexto = botao.querySelector("span");
           let valorAtual = parseInt(spanTexto.textContent); 
+
+          spanTexto.textContent = valorAtual + 1;
           });
       });
   </script> 
